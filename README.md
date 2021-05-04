@@ -1,54 +1,35 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Brief
 
-## 🚀 Quick start
+Your challenge is to build out this 2-page coming soon website and get it looking as close to the design as possible.
 
-1.  **Create a Gatsby site.**
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+Your users should be able to:
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- See error states when the contact form is submitted if:
+  - The Name and/or Email Address fields are empty
+  - The Email Address is not formatted correctly
+- Bonus: See a live countdown timer that ticks down every second
+- Bonus: See a custom-styled select form control in the sign-up form
 
-2.  **Start developing.**
+Download the project and go through the README.md file. This will provide further details about the project and help you get set up.
 
-    Navigate into your new site’s directory and start it up.
+Want some support on the challenge? Join our Slack community and ask questions in the help channel.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Getting started
 
-3.  **Open the code and start customizing!**
+    1. Download the starter code
 
-    Your site is now running at http://localhost:8000!
+    2. Set up the project with version control (e.g. Git)
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+    3. Read the README.md file and have a look around the project
 
-4.  **Learn more**
+    4. Download the design file, we provide both Sketch and Figma versions of the design
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    5. Get colors, fonts, etc from the design system in the design file
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    6. Set up your project/file architecture however you want
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+    7. Start coding!
