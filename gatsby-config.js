@@ -1,3 +1,7 @@
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '.env' });
+
 module.exports = {
   siteMetadata: {
     title: "officelite-coming-soon-site",
@@ -6,7 +10,7 @@ module.exports = {
     {
       resolve: "gatsby-source-datocms",
       options: {
-        apiToken: "9799cf9ae7d04ad38fbb8711f9df2b",
+        apiToken: process.env.DATO_TOKEN,
       },
     },
     "gatsby-plugin-styled-components",
@@ -14,9 +18,18 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `kumbh sans\:400,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/assets/favicon-32x32.png",
       },
     },
     "gatsby-plugin-sharp",
@@ -25,7 +38,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/assets/",
       },
       __key: "images",
     },
