@@ -8,7 +8,8 @@ const GlobalStyles = createGlobalStyle`
         --black: #25293A;
         --grey: #747B95;
         --red: #F05B5B;
-        --white: #fff; 
+        --white: #fff;
+        --mainBG: #FAFAFA; 
     }
     html {
         box-sizing: border-box;
@@ -20,7 +21,9 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
     }
     body {
-        font-size: 1.6rem
+        font-size: 1.6rem;
+        color: var(--black);
+        background-color: var(--mainBG);
     }
     // Css reset
     /* http://meyerweb.com/eric/tools/css/reset/ 
