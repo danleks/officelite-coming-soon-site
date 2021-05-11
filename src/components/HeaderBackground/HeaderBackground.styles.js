@@ -3,7 +3,7 @@ import bgPatternHeader from '../../assets/home/bg-pattern-header.svg';
 
 export const HeaderBackgroundStyles = styled.div`
     position: absolute;
-    top: -25.4%;
+    top: -17rem;
     display: flex;
     justify-content: center;
     width: 100%;
