@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import bgPatternHeader from '../../assets/home/bg-pattern-pricing.svg';
 
 export const CardStyles = styled.div`
     display: flex;
@@ -7,7 +8,16 @@ export const CardStyles = styled.div`
     width: 32.7rem;
     height: 50.8rem;
     border-radius: 1.8rem;
+    color:  ${({ color }) => color === 'blue' ? `var(--white)` : `var(--black)`};
     background-color: ${({ color }) => `var(--${color})`};
+    background-image:  ${({ color }) => color === 'blue' && `url(${bgPatternHeader})`};
+    background-size: 88rem;
+    background-repeat: no-repeat;
+    background-position: center -37.9rem;
+    @media(min-width: 768px) {
+        width: 68.9rem;
+        height: 31.6rem;
+    }
 `;
 
 export const CardInnerWrapperStyles = styled.div`
@@ -48,5 +58,5 @@ export const CardPlanUserNumber = styled.span`
 
 export const CardPlanDesc = styled.span`
     line-height: 2.8rem;
-    color: var(--grey);
+    color:  ${({ color }) => color === 'blue' ? `var(--white)` : `var(--grey)`};
 `;
