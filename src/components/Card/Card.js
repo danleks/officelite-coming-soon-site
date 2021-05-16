@@ -4,23 +4,24 @@ import { CardStyles, CardInnerWrapperStyles, CardTitleStyles, CardPlanTypeStyles
 
 
 const Card = ({ id, price, title, usersAllowed, planColor, description1, description2, description3 }) => {
+    console.log(planColor);
     return (
         <CardStyles key={id} color={planColor}>
-            <CardInnerWrapperStyles mgt='40'>
-                <CardTitleStyles>{title}</CardTitleStyles>
-            </CardInnerWrapperStyles>
-            <CardInnerWrapperStyles mgt='40'>
-                <CardPlanTypeStyles>{price}</CardPlanTypeStyles>
-                <CardPlanUserNumber>{usersAllowed}</CardPlanUserNumber>
-            </CardInnerWrapperStyles>
-            <CardInnerWrapperStyles mgt='56'>
-                <CardPlanDesc color={planColor}>{description1}</CardPlanDesc>
-                <CardPlanDesc color={planColor}>{description2}</CardPlanDesc>
-                <CardPlanDesc color={planColor}>{description3}</CardPlanDesc>
-            </CardInnerWrapperStyles>  
-            <CardInnerWrapperStyles mgt='32'>
-                <Button light>Try for free</Button>
-            </CardInnerWrapperStyles>     
+                <CardInnerWrapperStyles>
+                    <CardTitleStyles>{title}</CardTitleStyles>
+                </CardInnerWrapperStyles>
+                <CardInnerWrapperStyles>
+                    <CardPlanTypeStyles>{price}</CardPlanTypeStyles>
+                    <CardPlanUserNumber>{usersAllowed}</CardPlanUserNumber>
+                </CardInnerWrapperStyles>
+                <CardInnerWrapperStyles>
+                    <CardPlanDesc color={planColor}>{description1}</CardPlanDesc>
+                    <CardPlanDesc color={planColor}>{description2}</CardPlanDesc>
+                    <CardPlanDesc color={planColor}>{description3}</CardPlanDesc>
+                </CardInnerWrapperStyles>
+                <CardInnerWrapperStyles>
+                    <Button buttonColor={planColor === 'white' ? 'light' : 'white'}>Try for free</Button>
+                </CardInnerWrapperStyles>
         </CardStyles>
     )    
 }
