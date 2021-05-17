@@ -16,7 +16,7 @@ export const HeroSectionStyles = styled.section`
         flex-direction: row-reverse;
         gap: 6.3rem;
     }
-    @media(min-width: 1440px) {
+    @media(min-width: 1200px) {
         gap: 9.5rem;
     }
 `;
@@ -33,7 +33,7 @@ export const ChartIllustrationStyles = styled(Svg)`
     @media(min-width: 768px) {
         width: 28.1rem;
     }
-    @media(min-width: 1440px) {
+    @media(min-width: 1200px) {
         width: 47.5rem;
     }
 `;
