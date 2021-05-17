@@ -4,7 +4,7 @@ export const MainWrapperStyles = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-    max-width: 144rem;
+    /* max-width: 144rem; */
     margin: auto;
     /* overflow: hidden; */
     /* flex-direction: column; */
@@ -21,7 +21,7 @@ export const ContentWrapperStyles = styled.div`
     @media(min-width: 768px) {
         --width: 68.9rem;
     }
-    @media(min-width: 1440px) {
+    @media(min-width: 1200px) {
         --width: 110rem;
     }
 `;
