@@ -6,6 +6,7 @@ import { MainWrapperStyles, ContentWrapperStyles} from './Layout.styles';
 import HeaderBackground from '../HeaderBackground/HeaderBackground';
 import Footer from '../Footer/Footer';
 import Logo from '../Logo/Logo';
+import FooterBackground from '../FooterBackground/FooterBackground';
 
 const Layout = ({ children }) => (
     <>
@@ -16,8 +17,9 @@ const Layout = ({ children }) => (
             <ContentWrapperStyles>
             <Logo />
                 {children}
+            <Footer />
             </ContentWrapperStyles>
-            {/* <Footer /> */}
+            <FooterBackground />
         </MainWrapperStyles>
     </>
 );
