@@ -46,7 +46,6 @@ export const CardInnerWrapperStyles = styled.div`
         @media(min-width: 1200px) {
             flex: auto;
             align-items: inherit;
-            margin-top: 4rem;
         }
     }
     &:nth-child(2) {
@@ -60,7 +59,6 @@ export const CardInnerWrapperStyles = styled.div`
         @media(min-width: 1200px) {
             flex: auto;
             align-items: inherit;
-            margin-top: 4rem;
         }
     }
     &:nth-child(3) {
@@ -72,7 +70,6 @@ export const CardInnerWrapperStyles = styled.div`
         }
         @media(min-width: 1200px) {
             flex: auto;
-            margin-top: 5.6rem;
         }
     }
     &:nth-child(4) {
@@ -86,7 +83,6 @@ export const CardInnerWrapperStyles = styled.div`
         @media(min-width: 1200px) {
             flex: auto;
             align-items: inherit;
-            margin-top: 3.2rem;
         }
     }
 `;
