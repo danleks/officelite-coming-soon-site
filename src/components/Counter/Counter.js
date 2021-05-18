@@ -1,25 +1,25 @@
 import React from 'react';
 import { CounterStyles, CounterTitleStyles, CounterInnerWrapperStyles, CounterFaceStyles, CounterUnitStyles, CounterUnitDescStyles } from './Counter.styles';
 
-const Counter = () => {
+const Counter = ({ light }) => {
     return (
         <CounterStyles>
-            <CounterTitleStyles><span>Coming</span> 4 Nov 2020</CounterTitleStyles>
+            <CounterTitleStyles light={light}><span>Coming</span> 4 Nov 2020</CounterTitleStyles>
             <CounterInnerWrapperStyles>
-                <CounterFaceStyles>
-                    <CounterUnitStyles>47</CounterUnitStyles>
+                <CounterFaceStyles light={light}>
+                    <CounterUnitStyles light={light}>47</CounterUnitStyles>
                     <CounterUnitDescStyles>days</CounterUnitDescStyles>
                 </CounterFaceStyles>
-                <CounterFaceStyles>
-                    <CounterUnitStyles>07</CounterUnitStyles>
+                <CounterFaceStyles light={light}>
+                    <CounterUnitStyles light={light}>07</CounterUnitStyles>
                     <CounterUnitDescStyles>hours</CounterUnitDescStyles>
                 </CounterFaceStyles>
-                <CounterFaceStyles>
-                    <CounterUnitStyles>56</CounterUnitStyles>
+                <CounterFaceStyles light={light}>
+                    <CounterUnitStyles light={light}>56</CounterUnitStyles>
                     <CounterUnitDescStyles>min</CounterUnitDescStyles>
                 </CounterFaceStyles>
-                <CounterFaceStyles>
-                    <CounterUnitStyles>14</CounterUnitStyles>
+                <CounterFaceStyles light={light}>
+                    <CounterUnitStyles light={light}>14</CounterUnitStyles>
                     <CounterUnitDescStyles>sec</CounterUnitDescStyles>
                 </CounterFaceStyles>
             </CounterInnerWrapperStyles>
