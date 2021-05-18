@@ -18,7 +18,7 @@ export const CounterTitleStyles = styled.h3`
     text-align: center;
 
     & > span {
-        color: var(--white);
+        color: ${({ light }) => light ? `var(--black)`: `var(--white)`};
     }
 `;
 
@@ -35,7 +35,7 @@ export const CounterFaceStyles = styled.div`
     width: 7.2rem;
     height: 9.2rem;
     border-radius: 4px;
-    background-color: var(--lightBlack);
+    background-color: ${({ light }) => light ? `rgba(81, 117, 255, .1)` : `var(--lightBlack)`};
     @media(min-width: 768px) {
         width: 10rem;
         height: 12.8rem;
@@ -47,7 +47,7 @@ export const CounterUnitStyles = styled.span`
     font-size: 3.2rem;
     font-weight: 700;
     line-height: 4.8rem;
-    color: var(--white);
+    color: ${({ light }) => light ? `var(--blue)` : `var(--white)`};
     @media(min-width: 768px) {
         font-size: 5.6rem;
         line-height: 4.8rem;
@@ -59,7 +59,7 @@ export const CounterUnitDescStyles = styled.span`
     font-weight: 700;
     line-height: 2.8rem;
     opacity: .5;
-    color: var(--white);
+    color: var(--grey);
     @media(min-width: 768px) {
         font-size: 1.6rem;
     }
